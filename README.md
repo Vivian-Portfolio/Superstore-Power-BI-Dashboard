@@ -148,22 +148,21 @@ Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Mont
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `Total Revenue ` |Sum of all Sales across the dataset | [What decision or question it answers] |
-| `Total Profit` | Sum of all Profit across the dataset | [What decision or question it answers] |
-| `Profit Margin` |Total Profit / Total Revenue| [What decision or question it answers] |
-| `Sales Growth%` |Month-over-month change in sales | [What decision or question it answers] |
-| `Total Orders` | Distinct count of Order ID | [What decision or question it answers] |
-| `Best Shipping Mode` | Ship Mode with highest order volume   | [What decision or question it answers] |
-| `Top City by Orders` |City with the highest order volume | [What decision or question it answers] |
+| `Total Revenue ` |Sum of all Sales across the dataset | Establish the overall size of the business being analyzed|
+| `Total Profit` | Sum of all Profit across the dataset | Shoes whether revenue is translating into actual earning  |
+| `Profit Margin` |Total Profit / Total Revenue| Reveals how efficiently sales convert into profit - flags if margins are being eroded  |
+| `Sales Growth%` |Month-over-month change in sales | Signals whether the business is expanding, flat or declining ] |
+| `Total Orders` | Distinct count of Order ID | Measures transaction volume independents of order size |
+| `Best Shipping Mode` | Ship Mode with highest order volume   | Highlights where fulfillment resources should be prioritized |
+| `Top City by Orders` |City with the highest order volume | [Identifies the strongest regional market for targeted strategy |
 
 ### Methods Use
 
-- [e.g., Descriptive statistics - distribution, central tendency, outlier detection]
-- [e.g., Trend analysis across [time period]]
-- [e.g., Segmentation / group comparison by [dimension]]
-- [e.g., Correlation analysis between [variable A] and [variable B]]
-- [e.g., SQL window functions for [specific aggregation]]
-- [e.g., Custom aggregation or transformation logic in [tool]]
+- Descriptive statistics -distribution of sales and profit across categories, regions, and shipping modes
+- Trend analysis across order year (2014–2017) and month
+- Segmentation / group comparison by sub-category, region, and customer
+- Correlation analysis between Discount and Profit Margin to test whether heavier discounting erodes margin
+- DAX time-intelligence functions (DATEADD) for month-over-month sales growth
 
 ---
 
@@ -171,79 +170,41 @@ Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Mont
 
 
 
-**Insight 1: [Short descriptive headline]**
-[What you found + what it suggests. One short paragraph.]
+**Insight 1:Discounting is quietly eroding margin in specific sub-categories**
+The scatter plot of Discount vs. Profit Margin shows several sub-categories with high discount percentages but low or negative profit margins. This suggests discount strategy in those lines needs review rather than blanket promotion.
 
-**Insight 2: [Short descriptive headline]**
-[What you found + what it suggests.]
-
-**Insight 3: [Short descriptive headline]**
-[What you found + what it suggests.]
-
-**Insight 4 (if applicable): [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 2: Standard Class dominates fulfillment**
+Standard Class accounts for 2,994 of 5,009 orders (~60%), far outpacing Second Class, First Class, and Same Day combined — indicating most customers aren't paying for faster shipping.
+**Insight 3: Technology leads category performance]**
+Technology is the top-selling category, ahead of Furniture and Office Supplies, suggesting stronger unit economics or demand in that line worth replicating elsewhere.
+**Insight 4 Sales accelerated sharply from 2015 to 2017**
+After relatively flat growth in 2014–2015, sales rose sharply through 2017, pointing to a specific driver (new products, markets, or promotions) worth identifying and repeating.
 
 ---
 
 ## 10. Recommendations
 
-<!--
-  Action-oriented. Addressed to a real audience.
-  Tied explicitly to the insight that supports each one.
-
-  WHAT GOOD LOOKS LIKE:
-  Priority: High
-  Recommendation: "Conduct a fulfilment audit for home goods deliveries
-                   in Region A - specifically investigating whether returns
-                   correlate with a particular warehouse, carrier, or SKU batch."
-  Based On: Insight 1 - return rate anomaly in Region A
-  Owner: Operations / Supply Chain team
-
-  WHAT TO AVOID:
-  ❌ "Improve the return rate."
-     (Not actionable. Doesn't say who, how, or where to start.)
-  ❌ "Further analysis is needed."
-     (This is a placeholder, not a recommendation.)
--->
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
 | High | Review and cap discounting on sub-categories showing high discount but low profit margin | Insight 5 — discounting is eroding profitability in specific sub-categories | Sales / Pricing team |
 | Medium | Investigate what's driving Technology's lead in sales and apply similar strategies to Furniture and Office Supplies | Insight 6 — Technology leads as the top-selling category| Sales / Marketing team |
-| Low | [Exploratory or longer-term suggestion] | [Insight it comes from] | [Who should act] |
+| Low | Explore whether offering incentives for faster shipping tires could increase revenue per order | Insight 2 - Standard Class dominates at 60% of orders] | Operations team  
 
 ---
 
 ## 11. Assumptions & Limitations
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  Assumption: "Transaction records were assumed to be complete for all five regions.
-               No validation was performed against source system record counts."
-  Limitation: "The analysis cannot distinguish between returns initiated by
-               the customer vs. returns initiated by the business (e.g., recalls).
-               If business-initiated returns are concentrated in Region A, the
-               return rate finding may reflect a policy decision, not a quality issue."
-
-  WHAT TO AVOID:
-  ❌ Leaving this section blank or writing "None known."
-     Every project has limitations. Documenting them is a sign of
-     analytical maturity - not a confession of failure.
--->
-
 ### Assumptions
-- [What did you treat as true without being able to verify?]
-- [What simplifications did you make for scope or feasibility?]
-- [What domain rules or definitions did you accept as given?]
+- Transaction records were assumed to be complete and accurate for the full 2014–2017 period; no validation was performed against an external source
+- Row ID was treated as the unique identifier for deduplication; repeated Order IDs were assumed to be legitimate multi-line orders, not duplicates
+- Discount and Profit figures as provided were assumed accurate at the time of sale, with no later adjustments or returns factored in
 
 ### Limitations
-- [What gaps exist in the data?]
-- [What analysis was out of scope but could affect interpretation?]
-- [What would a more rigorous version of this project include?]
-- [Are there known biases in the data source or collection method?]
-
-> *The goal here is pre-emptive Q&A. What would a thoughtful skeptic push back on? Document the answer here, before they ask.*
-
+-The dataset does not include shipping cost data, so profitability figures reflect product margin only, not fully-loaded cost to serve
+- No customer demographic data beyond name and segment was available, limiting deeper behavioral segmentation
+- The analysis cannot distinguish whether discounting decisions were deliberate strategy or reactive — if heavy discounts in certain sub-categories were a considered pricing tactic, the margin erosion finding may reflect intent rather than a problem to fix
+- The data covers only 2014–2017, so longer-term or seasonal trends beyond this window can't be determined
 
 ---
 
@@ -251,16 +212,16 @@ Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Mont
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
+| Power BI Dashboard  | Interactive dashboard with KPIs cards, slicers, and charts covering revenue, profit, products and trends  |`visuals / superstore dashboard.pgn` |
+| Analysis Report | Written words documents summarizing findings, insights and recommendation | [`reports / Superstore_Dashboard_Analysis_Report`] |
+| Raw Data| Original Superstore Sales dataset| [`data/raw`] |
 
 ---
 
 ## 14. Author
 
-**[Your Name]**
-[Your role or title - current or target]
+**Vivian Okwara**
+Data Analyst - Lagos|
 
 - 🔗 [LinkedIn URL]
 - 💼 [Portfolio or GitHub profile URL]
