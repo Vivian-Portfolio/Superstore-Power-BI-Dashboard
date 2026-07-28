@@ -51,7 +51,7 @@ Problem Statement: The business had raw order-level transaction data but no visu
 - **Primary Objective:** Primary Objective: Build an interactive Power BI sales dashboard to visualize Superstore's revenue, profit, and product performance across 2014 and 2017.
 - **Secondary Objective 1:** Identify which product sub-categories are discounted heavily without a corresponding profit benefit.
 - **Secondary Objective 2:** Determine top-performing products, customers, regions, and shipping modes by order volume and sales value.
-- **Secondary Objective 3:** Track year-over-year sales growth trends across the 2014–2017 period.
+- **Secondary Objective 3:** Track year-over-year sales growth trends across the 2014-2017 period.
 
 ---
 
