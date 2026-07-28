@@ -173,10 +173,13 @@ Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Mont
 
 **Insight 1:Discounting is quietly eroding margin in specific sub-categories**
 The scatter plot of Discount vs. Profit Margin shows several sub-categories with high discount percentages but low or negative profit margins. This suggests discount strategy in those lines needs review rather than blanket promotion.
+
 **Insight 2: Standard Class dominates fulfillment**
 Standard Class accounts for 2,994 of 5,009 orders (~60%), far outpacing Second Class, First Class, and Same Day combined — indicating most customers aren't paying for faster shipping.
+
 **Insight 3: Technology leads category performance]**
 Technology is the top-selling category, ahead of Furniture and Office Supplies, suggesting stronger unit economics or demand in that line worth replicating elsewhere.
+
 **Insight 4 Sales accelerated sharply from 2015 to 2017**
 After relatively flat growth in 2014–2015, sales rose sharply through 2017, pointing to a specific driver (new products, markets, or promotions) worth identifying and repeating.
 
