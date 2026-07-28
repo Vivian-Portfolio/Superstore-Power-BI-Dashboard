@@ -1,5 +1,5 @@
-# [Project Title]
-> *One sentence. What did you analyze, build, or solve - and why does it matter?*
+# Superstore Bashboard
+> *Analyzed 9,994 retail transactions (2014–2017) to build an interactive Power BI dashboard tracking revenue, profit, and discount impact — helping stakeholders spot where discounting was eroding margin.*
 
 ---
 
@@ -8,10 +8,10 @@
 
 - [ ] Exploratory Data Analysis (EDA)
 - [ ] SQL Analysis / Querying
-- [ ] Dashboard / Data Visualization
+- [x] Dashboard / Data Visualization
 - [ ] Data Pipeline / ETL
 - [ ] Predictive Modelling / Machine Learning
-- [ ] Data Cleaning / Wrangling
+- [x] Data Cleaning / Wrangling
 - [ ] End-to-End (multiple of the above)
 - [ ] Other: ___________
 
@@ -22,16 +22,14 @@
 2. [Objectives](#2-objectives)
 3. [Project Scope & Tools](#3-project-scope--tools)
 4. [Repository Structure](#4-repository-structure)
-5. [Data Workflow](#5-data-workflow)
+5. [Data Preparation](#5-data-preparation)
 6. [Data Model & Schema](#6-data-model--schema)
-7. [ERD - Entity Relationship Diagram](#7-erd--entity-relationship-diagram) *(SQL projects)*
-8. [Analysis & Metrics](#8-analysis--metrics)
-9. [Key Insights](#9-key-insights)
-10. [Recommendations](#10-recommendations)
-11. [Assumptions & Limitations](#11-assumptions--limitations)
-12. [Future Enhancements](#12-future-enhancements)
-13. [Deliverables](#13-deliverables)
-14. [Author](#14-author)
+7. [Analysis & Metrics](#7-analysis--metrics)
+8. [Key Insights](#8-key-insights)
+9. [Recommendations](#9-recommendations)
+10. [Deliverables](#10-deliverables)
+11. [Assumption](#11Assumption])
+12. [Author](#12-author)
 
 ---
 
