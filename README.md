@@ -61,9 +61,9 @@ Problem Statement: The business had raw order-level transaction data but no visu
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** | Four years of Superstore transaction data (2014–2017), covering sales volume, revenue, profit, discount, product categories, shipping modes, and geography |
-| **Out of Scope** | Customer demographic data beyond name and segment — no individual customer profiling was performed|
-| **Time Period** | January 2014 – December 2017
+| **In Scope** | Four years of Superstore transaction data (2014-2017), covering sales volume, revenue, profit, discount, product categories, shipping modes, and geography |
+| **Out of Scope** | Customer demographic data beyond name and segment - no individual customer profiling was performed|
+| **Time Period** | January 2014 - December 2017
 | **Granularity** | Row-level order/line-item data (one row per order line) |
 
 ### Tools & Technologies
@@ -172,7 +172,6 @@ Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Mont
 
 **Insight 1:Discounting is quietly eroding margin in specific sub-categories**
 The scatter plot of Discount vs. Profit Margin shows several sub-categories with high discount percentages but low or negative profit margins. This suggests discount strategy in those lines needs review rather than blanket promotion.
-
 **Insight 2: Standard Class dominates fulfillment**
 Standard Class accounts for 2,994 of 5,009 orders (~60%), far outpacing Second Class, First Class, and Same Day combined — indicating most customers aren't paying for faster shipping.
 **Insight 3: Technology leads category performance]**
@@ -187,8 +186,8 @@ After relatively flat growth in 2014–2015, sales rose sharply through 2017, po
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | Review and cap discounting on sub-categories showing high discount but low profit margin | Insight 5 — discounting is eroding profitability in specific sub-categories | Sales / Pricing team |
-| Medium | Investigate what's driving Technology's lead in sales and apply similar strategies to Furniture and Office Supplies | Insight 6 — Technology leads as the top-selling category| Sales / Marketing team |
+| High | Review and cap discounting on sub-categories showing high discount but low profit margin | Insight 5 - discounting is eroding profitability in specific sub-categories | Sales / Pricing team |
+| Medium | Investigate what's driving Technology's lead in sales and apply similar strategies to Furniture and Office Supplies | Insight 6 - Technology leads as the top-selling category| Sales / Marketing team |
 | Low | Explore whether offering incentives for faster shipping tires could increase revenue per order | Insight 2 - Standard Class dominates at 60% of orders] | Operations team  
 
 ---
@@ -203,7 +202,7 @@ After relatively flat growth in 2014–2015, sales rose sharply through 2017, po
 ### Limitations
 -The dataset does not include shipping cost data, so profitability figures reflect product margin only, not fully-loaded cost to serve
 - No customer demographic data beyond name and segment was available, limiting deeper behavioral segmentation
-- The analysis cannot distinguish whether discounting decisions were deliberate strategy or reactive — if heavy discounts in certain sub-categories were a considered pricing tactic, the margin erosion finding may reflect intent rather than a problem to fix
+- The analysis cannot distinguish whether discounting decisions were deliberate strategy or reactive - if heavy discounts in certain sub-categories were a considered pricing tactic, the margin erosion finding may reflect intent rather than a problem to fix
 - The data covers only 2014–2017, so longer-term or seasonal trends beyond this window can't be determined
 
 ---
