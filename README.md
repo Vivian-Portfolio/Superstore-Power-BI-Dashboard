@@ -175,7 +175,7 @@ Date range: January 2014 - December 2017.
 The scatter plot of Discount vs. Profit Margin shows several sub-categories with high discount percentages but low or negative profit margins. This suggests discount strategy in those lines needs review rather than blanket promotion.
 
 **Insight 2: Standard Class dominates fulfillment**
-Standard Class accounts for 2,994 of 5,009 orders (~60%), far outpacing Second Class, First Class, and Same Day combined — indicating most customers aren't paying for faster shipping.
+Standard Class accounts for 2,994 of 5,009 orders (~60%), far outpacing Second Class, First Class, and Same Day combined - indicating most customers aren't paying for faster shipping.
 
 **Insight 3: Technology leads category performance]**
 Technology is the top-selling category, ahead of Furniture and Office Supplies, suggesting stronger unit economics or demand in that line worth replicating elsewhere.
