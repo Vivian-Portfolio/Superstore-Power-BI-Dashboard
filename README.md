@@ -100,7 +100,7 @@ Problem Statement: The business had raw order-level transaction data but no visu
 
 1. **Source:** Superstore Sales dataset — order-level retail transaction records. Data covers January 2014 - December 2017.
 2. **Ingestion:**Raw data loaded into Excel, containing order and ship dates, customer details, product category/sub-category, sales, profit, discount, quantity, and geographic fields (region, state, city).
-3. **Transformation:** Using Power Query, duplicate rows were removed based on the unique Row ID field while preserving legitimate repeated Order IDs. Order Date and Ship Date were converted from text to Date type using "Change Type with Locale" (English – United States). Sales, Profit, and Discount were verified as Decimal Number, and Quantity as Whole Number.
+3. **Transformation:** Using Power Query, duplicate rows were removed based on the unique Row ID field while preserving legitimate repeated Order IDs. Order Date and Ship Date were converted from text to Date type using "Change Type with Locale" (English - United States). Sales, Profit, and Discount were verified as Decimal Number, and Quantity as Whole Number.
 4. **Modelling:** In Power BI, DAX measures were created for Total Revenue, Total Profit, Total Orders, Profit Margin, Previous Month Sales, and Sales Growth %.
 5. **Analysis:** Sales performance was analyzed across time periods, product categories, customers, regions, and shipping modes using interactive slicers and visualizations.
 6. **Output:** Output: Interactive Power BI dashboard, written analysis report (Word document), and project documentation uploaded to GitHub.
@@ -115,7 +115,7 @@ Problem Statement: The business had raw order-level transaction data but no visu
 | Field Name | Data Type | Description | Example Value |
 |------------|-----------|-------------|---------------|
 | `Row ID` | Integer | Unique identifier for each row | 1 | 
-| `Order ID` | string | Unique identifier for each order (repeats across line items)|CA -2017-152156|
+| `Order ID` | string | Unique identifier for each order (repeats across line items)|CA - 2017-152156|
 | `Order Date` | Date | Date the order was placed| 11/08/2017 |
 | `Ship Date` | Date | Date of order was shipped | 11/11/2017 |
 | `Ship Mode` | string | Shipping method used| [Standard Class |
@@ -152,7 +152,7 @@ Date range: January 2014 - December 2017.
 | `Total Revenue ` |Sum of all Sales across the dataset | Establish the overall size of the business being analyzed|
 | `Total Profit` | Sum of all Profit across the dataset | Shoes whether revenue is translating into actual earning  |
 | `Profit Margin` |Total Profit / Total Revenue| Reveals how efficiently sales convert into profit - flags if margins are being eroded  |
-| `Sales Growth%` |Month-over-month change in sales | Signals whether the business is expanding, flat or declining ] |
+| `Sales Growth%` |Month-over-month change in sales | Signals whether the business is expanding, flat or declining  |
 | `Total Orders` | Distinct count of Order ID | Measures transaction volume independents of order size |
 | `Best Shipping Mode` | Ship Mode with highest order volume   | Highlights where fulfillment resources should be prioritized |
 | `Top City by Orders` |City with the highest order volume | Identifies the strongest regional market for targeted strategy |
