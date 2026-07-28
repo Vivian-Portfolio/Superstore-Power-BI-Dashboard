@@ -140,12 +140,12 @@ Date range: January 2014 - December 2017.
 
 ### Key Metrics Defined
 
-Total Revenue = SUM(superstore[Sales])
-Total Profit = SUM(superstore[Profit])
-Total Orders = DISTINCTCOUNT(superstore[Order ID])
-Profit Margin = DIVIDE([Total Profit], [Total Revenue], 0)
-Previous Month Sales = CALCULATE([Total Revenue], DATEADD(superstore[Order Date], -1, MONTH))
-Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Month Sales], 0)
+- Total Revenue = SUM(superstore[Sales])
+- Total Profit = SUM(superstore[Profit])
+- Total Orders = DISTINCTCOUNT(superstore[Order ID])
+- Profit Margin = DIVIDE([Total Profit], [Total Revenue], 0)
+- Previous Month Sales = CALCULATE([Total Revenue], DATEADD(superstore[Order Date], -1, MONTH))
+- Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Month Sales], 0)
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
