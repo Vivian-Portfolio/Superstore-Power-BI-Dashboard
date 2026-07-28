@@ -104,7 +104,7 @@ Problem Statement: The business had raw order-level transaction data but no visu
 4. **Modelling:** In Power BI, DAX measures were created for Total Revenue, Total Profit, Total Orders, Profit Margin, Previous Month Sales, and Sales Growth %.
 5. **Analysis:** Sales performance was analyzed across time periods, product categories, customers, regions, and shipping modes using interactive slicers and visualizations.
 6. **Output:** Output: Interactive Power BI dashboard, written analysis report (Word document), and project documentation uploaded to GitHub.
-7. 
+
 
 ---
 
