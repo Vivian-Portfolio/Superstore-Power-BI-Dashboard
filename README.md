@@ -138,15 +138,25 @@ Row count (approx.): 9,994 rows after cleaning. Date range: January 2014 - Decem
 
 ## 7 . Analysis & Metrics
 
-### Key Performance Indicators
+### Key Metrics Defined
+Total Revenue = SUM(superstore[Sales])
+Total Profit = SUM(superstore[Profit])
+Total Orders = DISTINCTCOUNT(superstore[Order ID])
+Profit Margin = DIVIDE([Total Profit], [Total Revenue], 0)
+Previous Month Sales = CALCULATE([Total Revenue], DATEADD(superstore[Order Date], -1, MONTH))
+Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Month Sales], 0)
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `KPIs` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 2]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 3]` | [What it measures, in one sentence] | [What decision or question it answers] |
+| `Total Revenue ` |Sum of all Sales across the dataset | [What decision or question it answers] |
+| `Total Profit` | Sum of all Profit across the dataset | [What decision or question it answers] |
+| `Profit Margin` |Total Profit / Total Revenue| [What decision or question it answers] |
+| `Sales Growth%` |Month-over-month change in sales | [What decision or question it answers] |
+| `Total Orders` | Distinct count of Order ID | [What decision or question it answers] |
+| `Best Shipping Mode` | Ship Mode with highest order volume   | [What decision or question it answers] |
+| `Top City by Orders` |City with the highest order volume | [What decision or question it answers] |
 
-### Methods Used
+### Methods Use
 
 - [e.g., Descriptive statistics - distribution, central tendency, outlier detection]
 - [e.g., Trend analysis across [time period]]
@@ -159,23 +169,7 @@ Row count (approx.): 9,994 rows after cleaning. Date range: January 2014 - Decem
 
 ## 9. Key Insights
 
-<!--
-  Findings + implications. Not just what happened - what it means.
 
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Return rates, not sales volume, explain Region A's underperformance.
-      Region A's return rate on home goods was 34% - more than double the
-      company average. Revenue was not lost at the point of sale; it was
-      lost post-sale through refunds. This points to a fulfilment or
-      product quality issue specific to that region, not a demand problem."
-
-  WHAT TO AVOID:
-  ❌ "Region A had lower revenue than other regions in Q4."
-     (That's an observation. It describes what happened.
-      An insight says what it means and where to look next.)
-
-  Aim for 3–6 insights. Quality over quantity.
--->
 
 **Insight 1: [Short descriptive headline]**
 [What you found + what it suggests. One short paragraph.]
@@ -214,8 +208,8 @@ Row count (approx.): 9,994 rows after cleaning. Date range: January 2014 - Decem
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Medium | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
+| High | Review and cap discounting on sub-categories showing high discount but low profit margin | Insight 5 — discounting is eroding profitability in specific sub-categories | Sales / Pricing team |
+| Medium | Investigate what's driving Technology's lead in sales and apply similar strategies to Furniture and Office Supplies | Insight 6 — Technology leads as the top-selling category| Sales / Marketing team |
 | Low | [Exploratory or longer-term suggestion] | [Insight it comes from] | [Who should act] |
 
 ---
@@ -250,27 +244,6 @@ Row count (approx.): 9,994 rows after cleaning. Date range: January 2014 - Decem
 
 > *The goal here is pre-emptive Q&A. What would a thoughtful skeptic push back on? Document the answer here, before they ask.*
 
----
-
-## 12. Future Enhancements
-
-<!--
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Automate the monthly data pull from the POS export folder using
-      a scheduled Python script, replacing the current manual process."
-  ✅ "Expand the return rate analysis to include carrier-level data,
-      which was unavailable in this dataset but exists in the logistics system."
-
-  WHAT TO AVOID:
-  ❌ "Add a machine learning model."
-     (Vague, and disconnected from the actual findings of this project.)
-  ❌ Listing aspirational features that don't follow logically from the work.
--->
-
-- [ ] [Enhancement 1 - specific and traceable to a real gap in this project]
-- [ ] [Enhancement 2]
-- [ ] [Enhancement 3]
-- [ ] [Enhancement 4]
 
 ---
 
