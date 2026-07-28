@@ -222,7 +222,7 @@ After relatively flat growth in 2014-2015, sales rose sharply through 2017, poin
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
 | Power BI Dashboard  | Interactive dashboard with KPIs cards, slicers, and charts covering revenue, profit, products and trends  |`visuals / capture superstore dashboard.pgn` |
-| Analysis Report | Written words documents summarizing findings, insights and recommendation | [`reports / Superstore_Dashboard_Analysis_Report`] |
+| Analysis Report | Written words documents summarizing findings, insights and recommendation | [`reports / Superstore_Dashboard_Analysis_Report-1.docx`] |
 | Raw Data| Original Superstore Sales dataset| `data/raw` |
 
 
