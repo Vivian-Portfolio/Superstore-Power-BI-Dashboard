@@ -221,13 +221,12 @@ After relatively flat growth in 2014–2015, sales rose sharply through 2017, po
 ## 14. Author
 
 **Vivian Okwara**
-Data Analyst - Lagos|
+Data Analyst | Lagos, Nigeria
 
-- 🔗 [LinkedIn URL]
-- 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - optional]
+- 🔗 https://linkedin.com/in/okwara-vivian
+- 💼 https://Vivian-Portfolio.github.io
+- 📧 okwaravivian26@gmail.com
 
 ---
 
-*Last updated: [Month YYYY]*
-*If this template helped you, consider starring the repository.*
+Last updated: Last updated: June 2026
