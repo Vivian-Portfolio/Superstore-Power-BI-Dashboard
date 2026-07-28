@@ -93,12 +93,10 @@ Problem Statement: The business had raw order-level transaction data but no visu
 ├── README.md                # You are here
 └── project_metadata.yml     # Project metadata
 ```
+
 ---
 
 ## 5. Data Workflow
-
-
-```
 
 1. **Source:** Superstore Sales dataset — order-level retail transaction records. Data covers January 2014 – December 2017.
 2. **Ingestion:**Raw data loaded into Excel, containing order and ship dates, customer details, product category/sub-category, sales, profit, discount, quantity, and geographic fields (region, state, city).
@@ -106,12 +104,13 @@ Problem Statement: The business had raw order-level transaction data but no visu
 4. **Modelling:** In Power BI, DAX measures were created for Total Revenue, Total Profit, Total Orders, Profit Margin, Previous Month Sales, and Sales Growth %.
 5. **Analysis:** Sales performance was analyzed across time periods, product categories, customers, regions, and shipping modes using interactive slicers and visualizations.
 6. **Output:** Output: Interactive Power BI dashboard, written analysis report (Word document), and project documentation uploaded to GitHub.
+7. 
 
 ---
 
 ## 6. Data Model & Schema
 
-### Dataset / Table: `[name]`
+### Dataset / Table: `Input Data`
 
 | Field Name | Data Type | Description | Example Value |
 |------------|-----------|-------------|---------------|
@@ -132,13 +131,15 @@ Problem Statement: The business had raw order-level transaction data but no visu
 | `Discount` | float  |Discount applied to the line item | 0.0|
 | `Profit` | float  | Profit for the line items | 41.91 |
 
-Row count (approx.): 9,994 rows after cleaning. Date range: January 2014 - December 2017.
+Row count (approx.): 9,994 rows after cleaning. 
+Date range: January 2014 - December 2017.
 
 ---
 
 ## 7 . Analysis & Metrics
 
 ### Key Metrics Defined
+
 Total Revenue = SUM(superstore[Sales])
 Total Profit = SUM(superstore[Profit])
 Total Orders = DISTINCTCOUNT(superstore[Order ID])
@@ -154,7 +155,7 @@ Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Mont
 | `Sales Growth%` |Month-over-month change in sales | Signals whether the business is expanding, flat or declining ] |
 | `Total Orders` | Distinct count of Order ID | Measures transaction volume independents of order size |
 | `Best Shipping Mode` | Ship Mode with highest order volume   | Highlights where fulfillment resources should be prioritized |
-| `Top City by Orders` |City with the highest order volume | [Identifies the strongest regional market for targeted strategy |
+| `Top City by Orders` |City with the highest order volume | Identifies the strongest regional market for targeted strategy |
 
 ### Methods Use
 
@@ -164,11 +165,11 @@ Sales Growth % = DIVIDE([Total Revenue] - [Previous Month Sales], [Previous Mont
 - Correlation analysis between Discount and Profit Margin to test whether heavier discounting erodes margin
 - DAX time-intelligence functions (DATEADD) for month-over-month sales growth
 
+
 ---
 
+
 ## 9. Key Insights
-
-
 
 **Insight 1:Discounting is quietly eroding margin in specific sub-categories**
 The scatter plot of Discount vs. Profit Margin shows several sub-categories with high discount percentages but low or negative profit margins. This suggests discount strategy in those lines needs review rather than blanket promotion.
@@ -179,7 +180,9 @@ Technology is the top-selling category, ahead of Furniture and Office Supplies, 
 **Insight 4 Sales accelerated sharply from 2015 to 2017**
 After relatively flat growth in 2014–2015, sales rose sharply through 2017, pointing to a specific driver (new products, markets, or promotions) worth identifying and repeating.
 
+
 ---
+
 
 ## 10. Recommendations
 
@@ -190,7 +193,9 @@ After relatively flat growth in 2014–2015, sales rose sharply through 2017, po
 | Medium | Investigate what's driving Technology's lead in sales and apply similar strategies to Furniture and Office Supplies | Insight 6 - Technology leads as the top-selling category| Sales / Marketing team |
 | Low | Explore whether offering incentives for faster shipping tires could increase revenue per order | Insight 2 - Standard Class dominates at 60% of orders] | Operations team  
 
+
 ---
+
 
 ## 11. Assumptions & Limitations
 
@@ -204,8 +209,10 @@ After relatively flat growth in 2014–2015, sales rose sharply through 2017, po
 - No customer demographic data beyond name and segment was available, limiting deeper behavioral segmentation
 - The analysis cannot distinguish whether discounting decisions were deliberate strategy or reactive - if heavy discounts in certain sub-categories were a considered pricing tactic, the margin erosion finding may reflect intent rather than a problem to fix
 - The data covers only 2014–2017, so longer-term or seasonal trends beyond this window can't be determined
+  
 
 ---
+
 
 ## 13. Deliverables
 
@@ -215,7 +222,9 @@ After relatively flat growth in 2014–2015, sales rose sharply through 2017, po
 | Analysis Report | Written words documents summarizing findings, insights and recommendation | [`reports / Superstore_Dashboard_Analysis_Report`] |
 | Raw Data| Original Superstore Sales dataset| [`data/raw`] |
 
+
 ---
+
 
 ## 14. Author
 
