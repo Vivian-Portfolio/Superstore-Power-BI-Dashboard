@@ -1,5 +1,5 @@
 # Superstore Bashboard
-> *Analyzed 9,994 retail transactions (2014–2017) to build an interactive Power BI dashboard tracking revenue, profit, and discount impact — helping stakeholders spot where discounting was eroding margin.*
+> *Analyzed 9,994 retail transactions (2014-2017) to build an interactive Power BI dashboard tracking revenue, profit, and discount impact - helping stakeholders spot where discounting was eroding margin.*
 
 ---
 
@@ -181,7 +181,7 @@ Standard Class accounts for 2,994 of 5,009 orders (~60%), far outpacing Second C
 Technology is the top-selling category, ahead of Furniture and Office Supplies, suggesting stronger unit economics or demand in that line worth replicating elsewhere.
 
 **Insight 4 Sales accelerated sharply from 2015 to 2017**
-After relatively flat growth in 2014–2015, sales rose sharply through 2017, pointing to a specific driver (new products, markets, or promotions) worth identifying and repeating.
+After relatively flat growth in 2014-2015, sales rose sharply through 2017, pointing to a specific driver (new products, markets, or promotions) worth identifying and repeating.
 
 
 ---
