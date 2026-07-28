@@ -98,7 +98,7 @@ Problem Statement: The business had raw order-level transaction data but no visu
 
 ## 5. Data Workflow
 
-1. **Source:** Superstore Sales dataset — order-level retail transaction records. Data covers January 2014 – December 2017.
+1. **Source:** Superstore Sales dataset — order-level retail transaction records. Data covers January 2014 - December 2017.
 2. **Ingestion:**Raw data loaded into Excel, containing order and ship dates, customer details, product category/sub-category, sales, profit, discount, quantity, and geographic fields (region, state, city).
 3. **Transformation:** Using Power Query, duplicate rows were removed based on the unique Row ID field while preserving legitimate repeated Order IDs. Order Date and Ship Date were converted from text to Date type using "Change Type with Locale" (English – United States). Sales, Profit, and Discount were verified as Decimal Number, and Quantity as Whole Number.
 4. **Modelling:** In Power BI, DAX measures were created for Total Revenue, Total Profit, Total Orders, Profit Margin, Previous Month Sales, and Sales Growth %.
@@ -169,7 +169,7 @@ Date range: January 2014 - December 2017.
 ---
 
 
-## 9. Key Insights
+## 8. Key Insights
 
 **Insight 1:Discounting is quietly eroding margin in specific sub-categories**
 The scatter plot of Discount vs. Profit Margin shows several sub-categories with high discount percentages but low or negative profit margins. This suggests discount strategy in those lines needs review rather than blanket promotion.
@@ -187,7 +187,7 @@ After relatively flat growth in 2014-2015, sales rose sharply through 2017, poin
 ---
 
 
-## 10. Recommendations
+## 9. Recommendations
 
 
 | Priority | Recommendation | Based On | Suggested Owner |
@@ -200,7 +200,7 @@ After relatively flat growth in 2014-2015, sales rose sharply through 2017, poin
 ---
 
 
-## 11. Assumptions & Limitations
+## 10. Assumptions & Limitations
 
 ### Assumptions
 - Transaction records were assumed to be complete and accurate for the full 2014–2017 period; no validation was performed against an external source
@@ -217,7 +217,7 @@ After relatively flat growth in 2014-2015, sales rose sharply through 2017, poin
 ---
 
 
-## 13. Deliverables
+## 11. Deliverables
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
@@ -229,7 +229,7 @@ After relatively flat growth in 2014-2015, sales rose sharply through 2017, poin
 ---
 
 
-## 14. Author
+## 12. Author
 
 **Vivian Okwara**
 Data Analyst | Lagos, Nigeria
